@@ -1,0 +1,50 @@
+/*Write a C++ program to demonstrate use of class employee. 
+(*Variable declares in private section & method declaration in 
+public) 
+*/
+#include<iostream>
+using namespace std;
+
+class employee
+{
+	private:
+		int	emp_id;
+		float salary;
+		string joining_date;
+		string name;
+		string birth_date;
+	public:
+		void get()
+		{
+			cout<<"Enter your name:";
+			cin>>name;
+			cout<<"Enter your birth date:";
+			cin>>birth_date;
+			cout<<"Enter your employee id:";
+			cin>>emp_id;
+			cout<<"Enter your joining date:";
+			cin>>joining_date;
+			cout<<"Enter your salary:";
+			cin>>salary;
+		}
+		
+		void display()
+		{
+			cout<<"Your name is:"<<name<<endl;
+			cout<<"Your birth date is:"<<birth_date<<endl;
+			cout<<"Your employee id is:"<<emp_id<<endl;
+			cout<<"Your joining date is:"<<joining_date<<endl;
+			cout<<"Your salary is:"<<salary<<endl;
+		}
+};
+int main()
+{
+	employee e1;
+	
+	cout<<"Purohit Akruti K."<<endl;
+	cout<<"220130318033"<<endl;
+	
+	e1.get();
+	e1.display();	
+	return 0;
+}
