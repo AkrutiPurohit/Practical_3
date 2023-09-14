@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+class account
+{
+	public:
+		int acc_no;
+		float balance;
+		string branch_code;
+};
+
+int main()
+{
+	account a1;
+	
+	cout<<"Purohit Akruti K."<<endl;
+	cout<<"220130318033"<<endl;
+	
+	cout<<"Enter your account no:";
+	cin>>a1.acc_no;
+	
+	cout<<"Enter your balance:";
+	cin>>a1.balance;
+	
+	cout<<"Enter your branch code:";
+	cin>>a1.branch_code;
+	
+	cout<<"Your account no is:"<<a1.acc_no<<endl;
+	cout<<"Your balance is:"<<a1.balance<<endl;
+	cout<<"Your branch code is:"<<a1.branch_code<<endl;
+	return 0;
+}
