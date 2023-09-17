@@ -1,0 +1,39 @@
+/*12.Write a C++ program to enter number and cost of a class “item”
+using getdata() and displaydata(). Write getdata() function outside the class item.*/
+
+#include<iostream>
+
+using namespace std;
+
+class iteam
+{
+    private:  
+        int number; 
+        float price;
+    public:
+        void getdata();
+        
+        void displaydata()
+        {
+            cout<<"The number of the iteam is:"<<number<<endl;
+            cout<<"The price of the iteam is:"<<price<<"Rs"<<endl;
+        }
+};
+
+void iteam :: getdata()
+{
+    cout<<"Enter the number of iteam:";
+    cin>>number;
+    cout<<"Enter the price of the iteam:";
+    cin>>price;
+}
+int main()
+{
+    cout<<"Purohit Akruti K."<<endl;
+    cout<<"220130318033"<<endl;
+    
+    iteam p1;
+    p1.getdata();
+    p1.displaydata();
+    return 0;
+}
