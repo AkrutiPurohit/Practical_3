@@ -1,0 +1,47 @@
+/*11.Create class product. Data members are product_id, product_name,
+unit_price. Member functions are getData(). [Getting input from user
+and assigning values to data members. ] and putData() [Display the
+product information.]. Call both member function for two objects.*/
+
+#include<iostream>
+
+using namespace std;
+
+class product
+{
+    private:  
+        int product_id; 
+        string product_name;
+        float unit_price;
+    public:
+        void getdata()
+        {
+            cout<<"Enter the name of product:";
+            cin>>product_name;
+            
+            cout<<"Enter the product id:";
+            cin>>product_id;
+            
+            cout<<"Enter the unit price of the product:";
+            cin>>unit_price;
+        }
+        
+        void putdata()
+        {
+            cout<<"The name of the product is:"<<product_name<<endl;
+            cout<<"The id of the product is:"<<product_id<<endl;
+            cout<<"The unit price of the product is:"<<unit_price<<"Rs"<<endl;
+        }
+};
+int main()
+{
+    cout<<"Purohit Akruti K."<<endl;
+    cout<<"220130318033"<<endl;
+    
+    product p1,p2;
+    p1.getdata();
+    p2.getdata();
+    p1.putdata();
+    p2.putdata();
+    return 0;
+}
