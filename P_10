@@ -1,0 +1,37 @@
+//Write a C++ program using class to find maximum number from three numbers.
+#include<iostream>
+
+using namespace std;
+
+class maximum
+{
+    private:
+        int a,b,c;
+    public:
+        void max()
+        {
+            cout<<"Enter 3 numbers:";
+            cin>>a>>b>>c;
+            if (a>b && a>c)
+            {
+                cout<<"A is max";
+            }
+            else if(b>a && b>c)
+            {
+                cout<<"B is max";
+            }
+            else
+            {
+                cout<<"C is max";
+            }
+        }
+};
+int main()
+{
+    cout<<"Purohit Akruti K."<<endl;
+    cout<<"220130318033"<<endl;
+    
+    maximum m1;
+    m1.max();
+    return 0;
+}
